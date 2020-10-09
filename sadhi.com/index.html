@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sadhi.Com</title>
+<link href="img/web.png" rel="icon">
+  <!-- Google Fonts -->
+
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<!-- Introduction Bootstrap -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!-- font awesome icon -->
+<script src="https://kit.fontawesome.com/e8e6eba5d5.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+  <!-- Template Main CSS File -->
+<link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <!--Modal: Login / Register Form-->
+  <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+      <!--Content-->
+      <div class="modal-content">
+
+        <!--Modal cascading tabs-->
+        <div class="modal-c-tabs">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+            <li class="nav-item waves-effect waves-light">
+              <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+                Login</a>
+            </li>
+            <li class="nav-item waves-effect waves-light">
+              <a class="nav-link mar" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                Register</a>
+            </li>
+          </ul>
+
+          <!-- Tab panels -->
+          <div class="tab-content">
+            <!--Panel 7-->
+            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body mb-1">
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-envelope prefix"></i>
+                    <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                  <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+
+                </div>
+
+                <div class="md-form form-sm mb-4">
+                  <i class="fas fa-lock prefix"></i>
+                  <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                  <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+
+                </div>
+                <div class="text-center mt-2">
+                  <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+                </div>
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                  <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                  <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                </div>
+                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+            <!--/.Panel 7-->
+
+            <!--Panel 8-->
+            <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body">
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-envelope prefix"></i>
+                  <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                </div>
+
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                </div>
+
+                <div class="md-form form-sm mb-4">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                </div>
+
+                <div class="text-center form-sm mt-2">
+                  <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                </div>
+
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-right">
+                  <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                </div>
+                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!--/.Panel 8-->
+          </div>
+
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!--Modal: Login / Register Form-->
+
+
+
+<!-- =========LOG IN====== -->
+
+
+
+
+
+<div class="top-bar">
+
+  <img class="photo" src="img/sadhi.png" alt="img">
+  <span class="log">
+    <a class="in" href="#" data-toggle="modal" data-target="#modalLRForm">LOG IN<i class="fa fa-angle-down" ></i></a>
+    <a class="in" href="#">HELP<i class="fa fa-user"></i></a>
+  </span>
+
+
+    <form class="box">
+  <div class="form-row">
+
+    <div class="col-md-2 mb-2">
+      <label for="validationDefault04">I'm looking for a</label>
+      <br>
+      <select class="custom-select" id="validationDefault04" required>
+        <option selected disabled value="Women">Women</option>
+         <option>Men</option>
+       </select>
+</div>
+<div class="col-md-2 mb-2">
+  <label for="validationDefault04">aged</label>
+  <select class="custom-select" id="validationDefault04" required>
+    <option selected disabled value="18">18</option>
+    <option>19</option>
+    <option>20</option>
+    <option>21</option>
+    <option>22</option>
+    <option>23</option>
+    <option>24</option>
+    <option>25</option>
+    <option>26</option>
+    <option>27</option>
+    <option>28</option>
+    <option>29</option>
+    <option>30</option>
+  </select>
+</div>
+<div class="col-md-2 mb-2">
+  <label for="validationDefault04">aged</label>
+  <select class="custom-select" id="validationDefault04" required>
+    <option selected disabled value="18">18</option>
+    <option>19</option>
+    <option>20</option>
+    <option>21</option>
+    <option>22</option>
+    <option>23</option>
+    <option>24</option>
+    <option>25</option>
+    <option>26</option>
+    <option>27</option>
+    <option>28</option>
+    <option>29</option>
+    <option>30</option>
+  </select>
+</div>
+<div class="col-md-2 mb-2">
+  <label for="validationDefault04">of religion</label>
+  <select class="custom-select" id="validationDefault04" required>
+    <option selected disabled value="">select</option>
+    <option> Hindu</option>
+    <option>Muslim</option>
+    <option>Christian</option>
+    <option>Sikh</option>
+    <option>Parsi</option>
+    <option>Jain</option>
+    <option>Buddhist</option>
+    <option>Jewish</option>
+    <option>Spiritual</option>
+    <option>Other</option>
+  </select>
+</div>
+  <div class="col-md-2 mb-2">
+    <label for="validationDefault04">and mother tongue</label>
+    <select class="custom-select" id="validationDefault04" required>
+      <option selected disabled value="">Select</option>
+      <option>Frequently</option>
+      <option>Hindi</option>
+        <option>Marathi</option>
+          <option>Punjabi</option>
+            <option>Bengali</option>
+    </select>
+  </div>
+
+      <div class="col-md-2 md-3">
+        <button type="button" class="btn btn-primary">Search</button>
+      </div>
+
+  </div>
+</form>
+ </div>
+
+<!-- ====banner==== -->
+
+  <div class="banner">
+  <h2 class="text-center none">Find Your Special Someone</h2>
+</div>
+<div class="round">
+<div class="row">
+
+    <div class="col-md-4">
+
+      <i class="fa fa-pencil-square-o icon fa-3x"></i>
+      <h4>Sign Up</h4>
+      <p>Register for free & put up your Profile</p>
+
+    </div>
+    <div class="col-md-4">
+      <i class="fa fa-user-plus icon fa-3x"></i>
+      <h4>Connect</h4>
+       <p>Select & Connect with Matches you like</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fa fa-comments icon fa-3x"></i>
+      <h4>Interact</h4>
+      <p class="line">Become a Premium Member & Start a Conversation </p>
+
+    </div>
+</div>
+ </div>
+
+ <div class="contaner">
+   <div>
+    <p class="home">Introducing Shaadi Meet!</p>
+   </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="image" src="img/Home-Couple-Optimized.png" alt="Home">
+
+    </div>
+    <div class="col-lg-6">
+      <img class="img" src="https://img2.shaadi.com/assests/2020/images/meet-badge.svg" alt="Home">
+      <p class="text">Now meet your Matches over <br> video call</p>
+    <h5>Available on the Shaadi.com App</h5>
+    <img class="store" src="img/store1.png" alt="store">
+    </div>
+
+  </div>
+ </div>
+
+ <!-- ========text======== -->
+
+ <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+   <ol class="carousel-indicators">
+     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+   </ol>
+   <div class="carousel-inner">
+     <div class="carousel-item active">
+       <div class="row row-cols-1 row-cols-md-3">
+  <div class="col-md-4">
+    <div class="card h-100">
+      <img src="img/aakash & Kanchan.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Aakash & Kanchan</h5>
+        <p class="card-text">We first came in contact through Shaadi.com and than further meetings started. And like wise we found compatible to each other. Thank you for giving the best gift of my life.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <img src="img/Anvesh & roman.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Anvesh & Roma</h5>
+        <p class="card-text">We first came in contact through Shaadi.com and than further meetings started. And like wise we found compatible to each other. Thank you for giving the best gift of my life..</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <img src="img/Ipshita & kanhu.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ipshita & Kanhu</h5>
+        <p class="card-text">We first came in contact through Shaadi.com and than further meetings started. And like wise we found compatible to each other. Thank you for giving the best gift of my life..</p>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+     </div>
+     <div class="carousel-item">
+       <div class="row row-cols-1 row-cols-md-3">
+  <div class="col-md-4">
+    <div class="card h-100">
+      <img src="img/Mainak & jayatasree.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Mainak & Jayatasree</h5>
+        <p class="card-text">We first came in contact through Shaadi.com and than further meetings started. And like wise we found compatible to each other. Thank you for giving the best gift of my life. </p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100">
+      <img src="img/image1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pratiksha & Machindra</h5>
+        <p class="card-text">We first came in contact through Shaadi.com and than further meetings started. And like wise we found compatible to each other. Thank you for giving the best gift of my life..</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <img src="img/image2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Nikita & Dhruv</h5>
+        <p class="card-text">We first came in contact through Shaadi.com and than further meetings started. And like wise we found compatible to each other. Thank you for giving the best gift of my life.</p>
+      </div>
+    </div>
+  </div>
+</div>
+     </div>
+     <div class="carousel-item">
+       <div class="row row-cols-1 row-cols-md-3">
+  <div class="col-md-4">
+    <div class="card h-100">
+      <img src="img/image3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Rafat & Taufiq</h5>
+        <p class="card-text">We first came in contact through Shaadi.com and than further meetings started. And like wise we found compatible to each other. Thank you for giving the best gift of my life.</p>
+
+        </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100">
+      <img src="img/image4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Priya & Mukesh</h5>
+        <p class="card-text">We first came in contact through Shaadi.com and than further meetings started. And like wise we found compatible to each other. Thank you for giving the best gift of my life..</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <img src="img/image5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Nakul & Ankita</h5>
+        <p class="card-text">We first came in contact through Shaadi.com and than further meetings started. And like wise we found compatible to each other. Thank you for giving the best gift of my life..</p>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+     </div>
+   </div>
+   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="sr-only">Previous</span>
+   </a>
+   <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="sr-only">Next</span>
+   </a>
+ </div>
+
+<!-- =============== ======================================== -->
+
+ <div class="getStartedWrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 storyHeading">
+        <h3>Your story is waiting to happen!</h3>
+      </div>
+      <div class="col-md-6">
+        <a href="#" class="myButton">Get Started</a>
+      </div>
+    </div>
+
+  </div>
+
+ </div>
+
+
+
+<!-- ======= ======= -->
+<div class="headding">
+  <p class="one">Search by Popular Matchmaking Sites</p>
+
+<div class="texter">
+  <div class="row">
+    <div class="col-sm-4">
+      <a class="nav-letter">By Mother Tongue</a>
+      <hr>
+    <ul class="nav">
+      <li><a href="https://www.shaadi.com/matrimony/bengali-matrimony"></a>Bengali |</li>
+      <li><a href="https://www.shaadi.com/matrimony/gujarati-matrimony"></a>Gujarati |</li>
+        <li><a href="https://www.shaadi.com/matrimony/hindi-matrimony"></a>Hindi |</li>
+        <li><a href="https://www.shaadi.com/matrimony/kannada-matrimony"></a>Kannada |</li>
+        <li><a href="https://www.shaadi.com/matrimony/marathi-matrimony"></a>Marathi |</li>
+        <li><a href="https://www.shaadi.com/matrimony/odia-matrimony"></a>Odia |</li>
+        <li><a href="https://www.shaadi.com/matrimony/punjabi-matrimony"></a>Punjabi |</li>
+   </ul>
+   </div>
+
+       <div class="col-sm-4">
+       <a class="nav-letter">By Religion</a>
+       <hr>
+        <ul class="nav">
+       <li><a href="https://www.shaadi.com/matrimony/buddhist-matrimony"></a>Buddhist | </li>
+         <li><a href="https://www.shaadi.com/matrimony/christian-matrimony"></a>Christian | </li>
+         <li><a href="https://www.shaadi.com/matrimony/hindu-matrimony"></a>Hindu | </li>
+          <li><a href="https://www.shaadi.com/matrimony/jain-matrimony"></a>Jain | </li>
+           <li><a href="https://www.shaadi.com/matrimony/jewish-matrimony"></a>Jewish | </li>
+           <li><a href="https://www.shaadi.com/matrimony/muslim-matrimony"></a>Muslim | </li>
+           <li><a href="https://www.shaadi.com/matrimony/parsi-matrimony"></a>Parsi| </li>
+            </ul>
+            </div>
+
+              <div class="col-sm-4">
+                <a class="nav-letter">By Community</a>
+                <hr>
+            <ul class="nav">
+                  <li><a href="https://www.shaadi.com/matrimony/agarwal-matrimony"></a>Agarwal|</li>
+                  <li><a href="https://www.shaadi.com/matrimony/arora-matrimony"></a>Arora|</li>
+                  <li><a href="https://www.shaadi.com/matrimony/baniya-matrimony"></a>Baniya|</li>
+                  <li><a href="https://www.shaadi.com/matrimony/brahmin-matrimony"></a>Brahmin|</li>
+                  <li><a href="https://www.shaadi.com/matrimony/gupta-matrimony"></a>Gupta|</li>
+                  <li><a href="https://www.shaadi.com/matrimony/kayastha-matrimony"></a>Kayasth|</li>
+                  <li><a href="https://www.shaadi.com/matrimony/khatri-matrimony"></a>Khatri |</li>
+             </ul>
+           </div>
+
+          </div>
+
+</div>
+</div>
+
+
+
+<!-- =========Download======== -->
+
+<div class="Wrapper">
+ <div class="contan">
+   <div class="row">
+     <div class="col-sm-6 storyHeading">
+       <h3 class="dnld">Download the App</h3>
+     </div>
+     <div class="col-md-6">
+
+        <a ><img class="google"src="img/store1.png" alt=""></a>
+        <a ><img class="playstore" src="img/store2.png" alt=""></a>
+
+     </div>
+   </div>
+
+ </div>
+
+</div>
+
+
+<!-- ====================image================= -->
+<img class="center" src="img/download.png" alt="">
+<div class="some">
+
+  <p class="shaadi">Shaadi.com, The World's No.1 Matchmaking Service, was founded with a simple objective - to help people find happiness. Shaadi.com (sometimes mis-spelt as Shadi.com, Shadhi.com or Sadi.com) is a social networking site specialising in matchmaking and not just a matrimonial service. As a leader in what is sometimes known as the matrimony category, we have touched more than 35 million lives. Shaadi.com has always differentiated itself from other matrimonials through its innovation-led approach. By redefining the way Indian brides and grooms meet for marriage, Shaadi.com has created a world-renowned brand that has changed the way of finding a life partner.<a class="bold" href="https://www.shaadi.com/introduction/index/letter-from-cmd">Learn More</a></p>
+
+
+</div>
+
+
+<!-- ffffffffffffffffffffffffffff -->
+
+<div class="col-sm-8 col-sm-offset-2 trustedByBlockWrap">
+  <div class="trustedByButton">Trusted by Millions</div>
+
+
+  </div>
+</div>
+
+
+<!-- =======fotter======== -->
+
+<div class="container text-center footerNavWrap">
+  <div class="row">
+    <div class="col-sm-3 navBlock">
+<div class="navHead"> Need Help? </div>
+      <ul class="na">
+        <li><a href="https://www.shaadi.com/registration/user/login">Member Login</a></li>
+        <li><a href="https://www.shaadi.com/registration/user">Sing Up</a></li>
+        <li><a href="https://www.shaadi.com/search">Partner Search</a></li>
+        <li><a href="https://www.shaadi.com/introduction/index/how-to-use">How to use Shaadi.com</a></li>
+        <li><a href="https://www.shaadi.com/customer-relations/faq/registration">Customer Support</a></li>
+
+      </ul>
+    </div>
+
+
+
+    <div class="col-sm-3 navBlock">
+    <div class="navHead"> Company </div>
+      <ul class="na">
+        <li><a href="https://www.shaadi.com/introduction/index/letter-from-cmd">About Us</a></li>
+        <li><a href="http://blog.shaadi.com/">Shaadi Blog</a></li>
+        <li><a href="https://careers.shaadi.com/">Careers</a></li>
+        <li><a href="https://www.shaadi.com/introduction/index/why-we-are-no1">Awards & Recognition</a></li>
+        <li><a href="https://www.shaadi.com/contact-us">Contact Us</a></li>
+
+      </ul>
+    </div>
+
+
+    <div class="col-sm-3 navBlock">
+    <div class="navHead"> Privacy & You </div>
+      <ul class="na">
+        <li><a href="https://www.shaadi.com/shaadi-info/index/terms">Terms of Use</a></li>
+        <li><a href="https://www.shaadi.com/shaadi-info/index/privacy">Privacy Policy</a></li>
+        <li><a href="https://support.shaadi.com/support/solutions/articles/48000953859-be-safe-online">Be Safe Online</a></li>
+        <li><a href="https://support.shaadi.com/support/tickets/new">Report Misuse</a></li>
+
+      </ul>
+    </div>
+
+
+    <div class="col-sm-3 navBlock">
+    <div class="navHead">More </div>
+      <ul class="na">
+        <li><a href="https://www.vipshaadi.in/">VIP Shaadi</a></li>
+        <li><a href="https://www.selectshaadi.com/select">Select Shaadi</a></li>
+        <li><a href="https://www.sangam.com/">Sangam</a></li>
+        <li><a href="http://www.shaadicentre.in/">Shaadi Center</a></li>
+        <li><a href="https://www.shaadi.com/meet">Shaadi Meet</a></li>
+
+      </ul>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+
+  </body>
+</html>
